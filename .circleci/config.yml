@@ -4,7 +4,8 @@ version: 2.1
 
 # Use a package of configuration called an orb.
 
-orbs:
+orbs: 
+  cypress: cypress-io/cypress@1
 
 # Declare a dependency on the welcome-orb
 
@@ -13,6 +14,10 @@ welcome: circleci/welcome-orb@0.4.1
 # Orchestrate or schedule a set of jobs
 
 workflows:
+  build:
+    jobs:
+      -cypress/run:
+        yarn: true
 
 # Name the workflow “welcome”
 
