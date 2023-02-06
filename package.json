@@ -12,5 +12,8 @@
   "devDependencies": {
     "cypress": "^12.5.1",
     "start-server-and-test": "^1.15.3"
+  },
+  "dependencies": {
+    "typescript": "^4.9.5"
   }
 }
